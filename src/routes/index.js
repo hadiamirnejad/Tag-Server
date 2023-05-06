@@ -1,0 +1,72 @@
+const { checkToken, signInRoute, addUser, editUser, changePassword, getUsers, getUser, deactiveUser, setUserCurrentFile, resetPassword, updateMessengerState } = require("./user");
+const { addPhrase,
+  getPhrases,
+  deletePhrases,
+  editPhrase,
+  sendPhrasesTagForCkecker,
+  submitPhrasesTag,
+  rejectPhrasesTag,
+  getSubmittedPhrases,
+  conflictPhrase,
+  getPhrasesStatistics,
+  getUserStatistics,
+  getPhrasesUploadFiles,
+  getUserFiles,
+  getFilesStat,
+  changeFileUsers,
+  deleteFile } = require("./phrase");
+const { addCategory, editCategory, getCategories } = require("./category");
+const { addField, getFields, editField } = require("./field");
+const { addOrEditToDo, getToDo } = require("./toDo");
+const { addTagTemplate, getTagTemplate, editTagTemplate } = require("./tagTemplate");
+const { getChatRooms, getChatRoomById, changeChatRoomMember, getChatRoomsByUser, addChatRoom, getChats, addChat } = require("./chat");
+
+const routes = [
+  checkToken,
+  signInRoute,
+  addUser,
+  editUser,
+  changePassword,
+  getUsers,
+  getUser,
+  deactiveUser,
+  setUserCurrentFile,
+  resetPassword,
+  updateMessengerState,
+  addCategory,
+  editCategory,
+  getCategories,
+  addField,
+  getFields,
+  editField,
+  addTagTemplate,
+  getTagTemplate,
+  editTagTemplate,
+  addPhrase,
+  getPhrases,
+  deletePhrases,
+  editPhrase,
+  sendPhrasesTagForCkecker,
+  submitPhrasesTag,
+  rejectPhrasesTag,
+  getSubmittedPhrases,
+  conflictPhrase,
+  getPhrasesStatistics,
+  getUserStatistics,
+  getPhrasesUploadFiles,
+  getUserFiles,
+  getFilesStat,
+  changeFileUsers,
+  deleteFile,
+  getChatRooms,
+  getChatRoomById,
+  changeChatRoomMember,
+  getChatRoomsByUser,
+  addChatRoom,
+  getChats,
+  addChat,
+  addOrEditToDo,
+  getToDo
+];
+
+module.exports = routes;
